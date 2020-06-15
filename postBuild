@@ -1,4 +1,1 @@
-conda init bash
-conda activate notebook
-conda install sos sos-notebook sos-python -c conda-forge
-conda deactivate notebook
+python3 -m sos_notebook.install
