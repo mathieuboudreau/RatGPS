@@ -8,7 +8,11 @@ RUN cd $HOME/work;\
     
 WORKDIR $HOME/work/RatGPS
 
+SHELL ["conda", "activate", "ipykernel_py2", "/bin/bash", "-c"]
+
+COPY show.py . 
+
 USER $NB_UID
 
 # Specify the default command to run
-CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
+ENTRYPOINT ["python", "show.py"]
