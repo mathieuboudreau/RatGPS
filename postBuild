@@ -1,0 +1,3 @@
+conda activate notebook
+conda install sos sos-notebook sos-python -c conda-forge
+conda deactivate notebook
