@@ -2,3 +2,6 @@ sos
 sos-notebook
 sos-python
 plotly==4.5.3
+matplotlib
+numpy
+scipy
